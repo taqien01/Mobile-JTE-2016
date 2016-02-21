@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KuliahMobile01</string>
+    <string name="action_settings">Settings</string>
+    <string name="judul">Hello World !!! </string>
+    <string name="tombol1">Terjemahkan Indonesia</string>
+    <string name="tombol2">Terjemahkan Inggris</string>
+    <string name="arti">Halo Dunia !!!</string>
+</resources>
