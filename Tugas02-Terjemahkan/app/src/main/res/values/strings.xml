@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tugas02-Terjemahkan</string>
+    <string name="action_settings">Settings</string>
+    <string name="ing">Hello World !!!</string>
+    <string name="ind">Halo Dunia !!!</string>
+    <string name="aceh">Alo Donya !!!</string>
+    <string name="tombolIng">Translate Inggris</string>
+    <string name="tombolInd">Translate Indonesia</string>
+    <string name="tombolAceh">Translate Aceh</string>
+</resources>
