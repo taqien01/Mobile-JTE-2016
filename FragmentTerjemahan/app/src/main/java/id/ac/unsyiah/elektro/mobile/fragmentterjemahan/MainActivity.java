@@ -53,7 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickChanged (View view){
         TextView txtTulisan = (TextView) findViewById(R.id.text);
+
         switch (view.getId()){
+
             case R.id.ind:
                 String aloDunia = getString(R.string.ind);
                 txtTulisan.setText(aloDunia);
