@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FragmentTerjemahan</string>
+    <string name="action_settings">Settings</string>
+    <string name="eng">Hello World</string>
+    <string name="ind">Halo Dunia</string>
+    <string name="aceh">Alo Donya</string>
+</resources>
