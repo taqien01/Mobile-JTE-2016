@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment"
+    android:name="id.ac.unsyiah.elektro.mobile.tugas06_joystick.MainActivityFragment"
+    android:layout_width="match_parent"
+    android:layout_height="202dp"
+    tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="id.ac.unsyiah.elektro.mobile.tugas06_joystick.TombolFrag"
+        android:id="@+id/fragmentTombol"
+        android:layout_gravity="center_horizontal"
+        tools:layout="@layout/fragment_tombol" />
+
+</LinearLayout>
