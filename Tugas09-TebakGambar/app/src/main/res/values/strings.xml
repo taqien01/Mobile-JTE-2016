@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tugas09-TebakGambar</string>
+    <string name="action_settings">Settings</string>
+   <!-- <string-array name="gambar">
+        <item>@drawable/mobil</item>
+        <item>@drawable/motor</item>
+        <item>@drawable/becakmotor</item>
+        <item>@drawable/becakdayung</item>
+        <item>@drawable/sepeda</item>
+    </string-array> -->
+</resources>
