@@ -14,7 +14,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ubah Pin"
+        android:text="Ubah Password"
         android:id="@+id/button2"
         android:onClick="OnClick2" />
 

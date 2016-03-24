@@ -59,19 +59,28 @@ public class MainActivity extends AppCompatActivity {
     public void onClick (View view){
         SharedPreferences sharedPreferences =
                 getSharedPreferences("id.ac.unsyiah.elektro.mobile.prak21_pin2.PREF_BERSAMA", Context.MODE_PRIVATE);
-        int pinPref = sharedPreferences.getInt("pin", 1234);
+        String userPref = sharedPreferences.getString("user", "admin");
+        String passPref = sharedPreferences.getString("pass", "123456");
 
-        EditText pin = (EditText) findViewById(R.id.editText);
-        String pinStr = pin.getText().toString();
-        int pinInt = Integer.valueOf(pinStr);
+        EditText user = (EditText) findViewById(R.id.user);
+        String username = user.getText().toString();
+        EditText pass = (EditText) findViewById(R.id.password);
+        String password = pass.getText().toString();
 
-        if(pinInt == pinPref){
-            Intent pesan = new Intent(getApplicationContext(), ActivityHalamanUtama.class);
-            pesan.putExtra("var1","Peu Haba !");
-            startActivity(pesan);
+        if(username.equals(userPref)){
+            if(password.equals(passPref)) {
+                Intent pesan = new Intent(getApplicationContext(), ActivityHalamanUtama.class);
+                pesan.putExtra("var1", "Peu Haba ");
+                pesan.putExtra("var2", userPref);
+                startActivity(pesan);
+            }else{
+                Toast toast = Toast.makeText(this, "Password Anda Salah ! ", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
+            }
 
         }else{
-            Toast toast = Toast.makeText(this, "Salah ! ", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Username Tidak Ada ! ", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
         }

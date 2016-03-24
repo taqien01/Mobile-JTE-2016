@@ -4,12 +4,16 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="235dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
         android:id="@+id/editText2"
-        android:maxLength="6" />
+        android:hint="Ubah Username Anda" />
+
+    <EditText
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Ubah Password Anda" />
 
     <Button
         android:layout_width="wrap_content"

@@ -25,20 +25,24 @@ public class ActivityUbahPin extends Activity {
 
     public void onClick3(View view){
 
-        EditText ubah = (EditText) findViewById(R.id.editText2);
+        EditText ubah = (EditText) findViewById(R.id.editText);
+        String password = ubah.getText().toString();
 
-        String pinStr = ubah.getText().toString();
-        int pinInt = Integer.valueOf(pinStr);
+        EditText ubah2 = (EditText) findViewById(R.id.editText2);
+        String username = ubah2.getText().toString();
+
 
         SharedPreferences sharedPreferences =
                 getSharedPreferences("id.ac.unsyiah.elektro.mobile.prak21_pin2.PREF_BERSAMA", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt("pin", pinInt);
+        editor.putString("user", username);
+        editor.putString("pass", password);
         editor.apply();
 
 
-        Intent pesan2 = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(pesan2);
+        Intent pesan = new Intent(getApplicationContext(), MainActivity.class);
+        pesan.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(pesan);
         finish();
     }
 }
