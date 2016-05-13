@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bimbel</string>
+    <string name="app_name2">Bimbel - Pengajar</string>
+    <string name="app_name3">Bimbel - Daftar</string>
+    <string name="tombol1">Reza</string>
+    <string name="tombol2">Yusuf</string>
+    <string name="tombol3">Irfan</string>
+    <string name="action_settings">Settings</string>
+</resources>
